@@ -6,6 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>الدكتور زيد شاكر أبو حمور</title>
   <style>
+
+body {
+  background-image: url('1.jpg'); /* مسار الصورة */
+  background-size: cover; /* تغطية كاملة للشاشة */
+  background-position: center; /* توسيط الصورة */
+  background-attachment: fixed; /* تبقى ثابتة أثناء التمرير */
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* ظل خفيف */
+  z-index: -1;
+}
+    
    
     body {
       font-family: 'Cairo', sans-serif;
