@@ -184,8 +184,47 @@
       right: 30px;
       transform: translateY(-50%);
     }
+    <style>
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 999;
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 15px 18px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
+  #backToTop:hover {
+    background-color: darkgoldenrod;
+  }
+</style>
   </style>
 </head>
+  <script>
+  // إظهار الزر عند التمرير للأسفل
+  window.onscroll = function() {
+    var btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // عند الضغط يعود للأعلى
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
 <body>
 
   <h1>معرض صور الدكتور زيد</h1>
@@ -234,6 +273,9 @@
       showImage();
     }
   </script>
+  <button onclick="scrollToTop()" id="backToTop" title="العودة للأعلى">
+  ↑
+</button>
 </body>
 </html>
     </section>
