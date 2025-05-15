@@ -7,6 +7,29 @@
   <title>الدكتور زيد شاكر أبو حمور</title>
   <style>
 
+.page-header {
+  position: relative;
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.top-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  opacity: 0.8; /* معدل الظهور: 0 = شفاف، 1 = ظاهر تمامًا */
+  transition: opacity 0.3s ease;
+}
+
+.top-image:hover {
+  opacity: 1; /* عند التمرير عليها تظهر بالكامل */
+}
+
+
+
+    
  
 body {
   margin: 0;
@@ -97,6 +120,13 @@ body::before {
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<header class="page-header">
+  <img src="images/logo.png" alt="شعار الدكتور زيد" class="top-image">
+  <h1>الدكتور زيد شاكر أبو حمور</h1>
+</header>
+
+  
 
 <style>
   #backToTop {
