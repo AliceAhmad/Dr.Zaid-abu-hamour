@@ -47,6 +47,62 @@
     figure img { max-width: 100%; border-radius: 8px; }
     figcaption { font-size: 14px; color: #555; margin-top: 6px; }
     .sources { font-size: 14px; color: #444; line-height: 1.7; }
+
+/* جدول مقارن – متجاوب للموبايل */
+.table-wrap {
+  overflow-x: auto;
+}
+.table-note {
+  font-size: 13px; color: #666; margin-top: 8px;
+}
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.compare th, .compare td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+  text-align: start;
+}
+.compare thead th {
+  background: #f2f7fb;
+  color: #003a61;
+  font-weight: 700;
+}
+.compare tbody tr:last-child td { border-bottom: 0; }
+
+/* موبايل: تحويل الصفوف إلى بطاقات */
+@media (max-width: 720px) {
+  .compare thead { display: none; }
+  .compare, .compare tbody, .compare tr, .compare td { display: block; width: 100%; }
+  .compare tr {
+    margin: 12px 0;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    overflow: hidden;
+  }
+  .compare td {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #f3f3f3;
+    padding: 10px 12px;
+  }
+  .compare td:last-child { border-bottom: 0; }
+  .compare td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #004d80;
+    min-width: 42%;
+  }
+}
+    
   </style>
 </head>
 <body>
@@ -87,10 +143,65 @@
   <div class="section">
     <h2>🌍 التوزيع الجغرافي</h2>
     <p>المحيط الهادئ هو الأكبر بمساحة تُقدَّر بـ 168 مليون كم²، بينما الأصغر هو المحيط المتجمد الشمالي بمساحة تقارب 14 مليون كم². البحار أصغر حجماً لكنها غالباً ما ترتبط بالمحيطات وتؤثر على مناخ المناطق المجاورة.</p>
-    <figure>
-      <img src="https://www.shakerabuhamour.com/images/world-oceans-map.webp" alt="خريطة توزيع المحيطات والبحار">
-      <figcaption>خريطة توضح توزيع المحيطات والبحار في العالم</figcaption>
-    </figure>
+    <div class="section" id="global-oceans-comparison" aria-labelledby="oceans-compare-heading">
+  <h2 id="oceans-compare-heading">📊 جدول مقارن للمحيطات الخمسة</h2>
+
+  <div class="table-wrap" role="region" aria-label="مقارنة خصائص المحيطات">
+    <table class="compare" aria-describedby="oceans-table-note">
+      <thead>
+        <tr>
+          <th scope="col">المحيط</th>
+          <th scope="col">المساحة (مليون كم²)</th>
+          <th scope="col">العمق المتوسط (م)</th>
+          <th scope="col">أقصى عمق (م) – الأخدود</th>
+          <th scope="col">ملاحظات/تيارات مميّزة</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="المحيط" scope="row"><strong>الهادئ</strong></td>
+          <td data-label="المساحة">≈ 168</td>
+          <td data-label="العمق المتوسط">≈ 4,000</td>
+          <td data-label="أقصى عمق">10,984 – أخدود ماريانا (Challenger Deep)</td>
+          <td data-label="ملاحظات/تيارات">أكبر محيط؛ تيارات كورو–أوياسيو؛ ظاهرتا إلنينيو/لانينيا</td>
+        </tr>
+        <tr>
+          <td data-label="المحيط" scope="row"><strong>الأطلسي</strong></td>
+          <td data-label="المساحة">≈ 106</td>
+          <td data-label="العمق المتوسط">≈ 3,646</td>
+          <td data-label="أقصى عمق">8,376 – أخدود بورتوريكو</td>
+          <td data-label="ملاحظات/تيارات">تيار الخليج الدافئ؛ دوران شمال الأطلسي المؤثر في مناخ أوروبا</td>
+        </tr>
+        <tr>
+          <td data-label="المحيط" scope="row"><strong>الهندي</strong></td>
+          <td data-label="المساحة">≈ 70</td>
+          <td data-label="العمق المتوسط">≈ 3,741</td>
+          <td data-label="أقصى عمق">7,258 – أخدود جاوة</td>
+          <td data-label="ملاحظات/تيارات">تأثير موسم الرياح الموسمية؛ تيارات سومالية/أغولهاس</td>
+        </tr>
+        <tr>
+          <td data-label="المحيط" scope="row"><strong>الجنوبي (المتجمد الجنوبي)</strong></td>
+          <td data-label="المساحة">≈ 20</td>
+          <td data-label="العمق المتوسط">≈ 3,270</td>
+          <td data-label="أقصى عمق">7,236 – أخدود ساوث ساندويتش</td>
+          <td data-label="ملاحظات/تيارات">التيار القطبي المحيطي المحيطي (ACC) يلفّ القارة القطبية</td>
+        </tr>
+        <tr>
+          <td data-label="المحيط" scope="row"><strong>الشمالي (المتجمد الشمالي)</strong></td>
+          <td data-label="المساحة">≈ 14</td>
+          <td data-label="العمق المتوسط">≈ 1,205</td>
+          <td data-label="أقصى عمق">5,550 تقريبًا – حوض مولوي (Molloy Deep)</td>
+          <td data-label="ملاحظات/تيارات">مغطّى بالجليد البحري موسميًا؛ تبدلات سريعة مع الاحترار القطبي</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="table-note" id="oceans-table-note">
+    القيم تقريبية لأغراض العرض التعليمي وتختلف باختلاف طرق القياس والمصادر العلمية. للوصول إلى القيم الرسمية المُحدَّثة راجع NOAA وUNESCO.
+  </p>
+</div>
+    
   </div>
 
   <div class="section">
