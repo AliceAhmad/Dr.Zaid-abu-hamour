@@ -1,386 +1,344 @@
 <!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-<style>
-  .main-title {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 30px;
-  }
-</style>
-<meta charset="utf-8"/><meta content="السيرة الذاتية للدكتور زيد شاكر أبو حمور، خبير أردني في النقل البحري والتجارة الدولية، المدير التنفيذي لشركة الأورواسيوية، وله خبرات وأبحاث متميزة في الملاحة وسلاسل الإمداد." name="description"/><meta content="الدكتور زيد شاكر أبو حمور, خبير نقل بحري, تكنولوجيا النقل البحري, الملاحة البحرية, النقل والتجارة الدولية, خدمات النقل البحري, موقع الدكتور زيد أبو حمور, Dr. Zaid Abu Hamour, Maritime Logistics, Jordan maritime expert" name="keywords"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>الدكتور زيد شاكر أبو حمور | خبير النقل البحري والتجارة الدولية</title>
-<style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
- 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('1.jpg'); /* مسار الصورة */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
+  <title>الدكتور زيد شاكر أبو حمور | خبير النقل البحري والتجارة الدولية</title>
+  <meta name="description" content="السيرة الذاتية للدكتور زيد شاكر أبو حمور، خبير أردني في النقل البحري والتجارة الدولية، المدير التنفيذي لشركة الأورواسيوية، وله خبرات وأبحاث متميزة في الملاحة وسلاسل الإمداد.">
+  <meta name="keywords" content="الدكتور زيد شاكر أبو حمور, خبير نقل بحري, تكنولوجيا النقل البحري, الملاحة البحرية, النقل والتجارة الدولية, سلاسل الإمداد, Maritime Logistics, Jordan maritime expert">
 
-/* طبقة ظل خفيف متدرجة */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, rgba(0,0,0,0.4), rgba(0,0,0,0.2));
-  z-index: -1;
-  pointer-events: none;
-  animation: fadeIn 3s ease-in-out;
-}
+  <!-- تحسين جلب الخط -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
-/* حركة تلاشي بسيطة عند تحميل الصفحة */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-   
-   
-    body {
-      font-family: 'Cairo', sans-serif;
-      background-color: #f4f6f8;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      direction: rtl;
+  <style>
+    :root{
+      --brand:#003366;
+      --brand-dark:#002244;
+      --paper:#ffffff;
+      --bg:#f4f6f8;
+      --ink:#333;
+      --gold:#DAA520;
     }
+
+    /* أساسيات */
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: 'Cairo', Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      /* إن أردت خلفية صورة علّق السطرين التاليين أو وفّر مسارًا صحيحًا */
+      /* background-image: url('1.jpg');
+      background-attachment: fixed; background-size: cover; background-position: center; */
+      overflow-x: hidden;
+    }
+
+    /* Header + Nav */
     header {
-      background-color: #003366;
-      color: white;
-      padding: 2rem;
+      background-color: var(--brand);
+      color: #fff;
       text-align: center;
+      padding: 2rem 1rem;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      margin: .5rem 0 0 0;
+      font-size: 2rem;
+      line-height: 1.3;
     }
+    header p { margin: .5rem 0 0 0; }
+
     nav {
-      background-color: #002244;
-      padding: 1rem;
+      background-color: var(--brand-dark);
       text-align: center;
+      padding: .75rem;
     }
     nav a {
-      color: white;
-      margin: 0 1rem;
+      color: #fff;
+      margin: 0 .8rem;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 700;
+      font-size: .95rem;
     }
+    nav a:hover { text-decoration: underline; }
+
+    /* المحتوى */
     .container {
       max-width: 900px;
       margin: 2rem auto;
       padding: 1rem;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: var(--paper);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
     }
-    section {
-      margin-bottom: 2rem;
-    }
+    section { margin-bottom: 2rem; }
     h2 {
-      color: #003366;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
+      color: var(--brand);
+      border-right: 3px solid #ccc;
+      padding-right: .75rem;
+      margin-top: 0;
+      font-size: 1.35rem;
     }
-    footer {
+    .main-title {
+      font-size: 20px;
+      font-weight: bold;
       text-align: center;
-      padding: 2rem;
-      background-color: #003366;
-      color: white;
-      margin-top: 2rem;
-    }
-  </style>
-<link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet"/>
-</head>
-<style>
-  #backToTop {
-    position: fixed;
-    bottom: 50px;
-    right: 14px;
-    z-index: 999;
-    background-color: gold;
-    color: blue;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 10px;
-    font-size: 22px;
-    font-weight: bold;
-    cursor: pointer;
-    display: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-  }
-
-  #backToTop:hover {
-    background-color: darkgoldenrod;
-  }
-</style>
-<header>
-<img alt="وصف الصورة" src="11.jpg" style="border: 5px solid gold; border-radius: 12px; width: 180px; height: auto;"/>
-<h1 class="main-title">الدكتور زيد شاكر أحمد أبو حمور</h1>
-<p style="font-size: 14px; font-weight: bold; color: white; text-align: center;">رجل أعمال وخبير في الملاحة والنقل البحري</p><p>يُعد الدكتور زيد شاكر أبو حمور أحد أبرز الخبراء الأردنيين في مجال تكنولوجيا النقل البحري.</p>
-</header>
-<nav>
-<a href="#about">نبذة</a>
-<a href="#vision">الرؤية</a>
-<a href="#career">المسيرة المهنية</a>
-<a href="#community">المسؤولية المجتمعية</a>
-<a href="#research">الأبحاث</a>
-<a href="#gallery">معرض الصور</a>
-</nav>
-<div class="container">
-<section id="about">
-<h2>نبذة تعريفية</h2>
-<p>رجل أعمال أردني، مواليد موسكو عام 1982، حصل على درجة الدكتوراه في تكنولوجيا النقل البحري من الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري بتقدير امتياز. يتقن العربية والإنجليزية، وملم بالروسية واليونانية والتركية، يشغل منصب المدير التنفيذي لشركة الأورواسيوية للملاحة البحرية، عضو مجلس إدارة في عدد من الشركات والوكالات البحرية.   وهو شخصية طموحة ومثابرة، عُرف بحبه للعمل وإيمانه العميق بقيمة الاجتهاد كطريق لتحقيق النجاح. لا يتردد في خوض التحديات، يعمل دائماً تحت مبدأ "المجازفة من أجل الهدف"، واضعاً نصب عينيه الرؤية الواضحة والنتائج الملموسة. جمع بين الفكر العملي وروح الريادة، مما جعله نموذجاً يُحتذى به في الإصرار والطموح</p>
-</section>
-<section id="vision">
-<h2>رؤية الدكتور زيد شاكر أبو حمور في تطوير النقل البحري</h2>
-<p> <!-- مثال داخل <body> -->
-<p>يرى <span style="color:blue;">الدكتور زيد شاكر أبو حمور</span> أن قطاع الملاحة والنقل البحري هو عصب حيوي في الاقتصاد العالمي، ومحرك رئيسي للتجارة الدولية. يؤمن بأهمية تطوير هذا القطاع من خلال الابتكار وتوظيف التكنولوجيا الحديثة لتحسين الكفاءة وتقليل التكاليف. كما يولي اهتماماً خاصاً بتأهيل الكفاءات البشرية ورفع مستوى التدريب البحري، معتبراً أن الاستثمار في العنصر البشري لا يقل أهمية عن الاستثمار في البنية التحتية. تنبع رؤيته من قناعة راسخة بأن النقل البحري ليس مجرد وسيلة، بل منظومة استراتيجية تفتح آفاقاً اقتصادية وتنموية واسعة.: ويؤمن الدكتور أبو حمور بأن الملاحة والنقل البحري يشكلان محوراً أساسياً في تعزيز الأمن اللوجستي والسيادة الاقتصادية للدول، خصوصاً تلك ذات المواقع الجغرافية الحيوية مثل الأردن. يركز في رؤيته على تحويل التحديات الإقليمية إلى فرص من خلال تطوير موانئ حديثة، وتوسيع شبكات الربط البحري، وتفعيل الشراكات الإقليمية والدولية.
-يرى أيضاً أن الرقمنة والتحول الذكي في إدارة سلاسل الإمداد البحرية هو المستقبل، مشيراً إلى أهمية إدخال أنظمة الملاحة الذكية، وتحليل البيانات، وتقنيات الذكاء الاصطناعي لتعزيز الكفاءة والشفافية في العمليات البحرية. كما يؤكد على ضرورة مواءمة البنية التشريعية والبيئية مع المعايير الدولية لضمان سلامة الملاحة وحماية البيئة البحرية.
-من خلال عمله وخبرته، يسعى الدكتور زيد إلى بناء بيئة بحرية متقدمة تواكب المتغيرات العالمية، وتضع الأردن والمنطقة في موقع تنافسي في قطاع النقل البحري العالمي.
-  .</p>
-</p></section>
-<section id="career">
-<h2>المسيرة المهنية</h2>
-<p>  يشغل حالياً منصب المدير التنفيذي لشركة الأورواسيوية، وعضو مجلس إدارة في شركات ووكالات بحرية. يتميز بشخصيته الطموحة ونهجه القيادي المبني على "المجازفة من أجل الهدف".</p>
-</section>
-<section id="community">
-<h2>المسؤولية المجتمعية</h2>
-<p>ساهم في دعم مؤسسات رياضية وتعليمية وخيرية محلياً، ويحرص على خدمة المجتمع كجزء من رؤيته القيادية المتكاملة، ويتمتع الدكتور زيد بعلاقة قوية ومبنية على الاحترام والوفاء بوالديه وأهله، يُعرف ببرّه العميق بهم واعتزازه بجذوره العائلية التي تشكل جزءاً أساسياً من شخصيته وقيمه. </p>
-</section>
-<section id="research">
-<h2>الأبحاث والإنجازات</h2>
-<p>له أبحاث منشورة في مجال النقل البحري وتكنولوجيا سلاسل الإمداد، وساهم في تطوير نظريات عملية في إدارة الموانئ والتحول الرقمي البحري.</p>
-<!-- قسم المراجع -->
-<div style="line-height: 1.4; font-size: 12px; text-align: right; margin-top: 40px;">
-<h3 style="font-size: 14px; color: #333;">المراجع:</h3>
-<p><strong>بحث علمي:</strong> <a href="https://journals.ekb.eg/article_304451.html" target="_blank">المجلة العلمية للدراسات التجارية والبيئية</a></p>
-<p><strong>بحث علمي:</strong> <a href="https://apc.aast.edu/ojs/index.php/MRT/article/view/MRT.2024.03.1.833" target="_blank">الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري</a></p>
-<p><strong>بحث علمي:</strong>
-<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://journals.ekb.eg/article_304451_1d371171b67c867d3c7c94b3b2b1d65a.pdf" target="_blank">
-      المجلة العلمية للدراسات التجارية والبيئية (PDF)
-    </a>
-</p>
-<p><strong>بحث علمي:</strong>
-<a href="https://www.researchgate.net/publication/372124188_The_impact_of_COVID-19_on_the_bulk_market_in_the_Mediterranean" target="_blank">
-      The impact of COVID-19 on the bulk market
-    </a>
-</p>
-<p>
-<a href="dr.zaid-abu-hammour.pdf" target="_blank">بحث: The impact of COVID-19 on the bulk market in the Mediterranean</a>
-</p>
-
-<h3 style="font-size: 14px; color: #333;">المقالات:</h3>
-
-<li style="list-style: none;">
-  <a href="ships/maritime-digital-leadership"
-     aria-label=" الابتكار الرقمي والقيادة الاستراتيجية "
-     style="color: #0026ff; font-size: 16px; text-decoration: none;">
-  - دور الابتكار الرقمي والقيادة الاستراتيجية في تطوير قطاع النقل البحري في منطقة البحر المتوسط. </a> </li>
-
-<p><a href="dr.pdf" target="_blank">أحد المقابلات (مجلة رجال الأعمال عدد 50 – أيلول 2014 – الأردن)</a></p>
-  
-  
-</div>
-</section>
-<section id="gallery">
-<h2>معرض الصور</h2>
-<!DOCTYPE html>
-
-<head>
-<meta charset="utf-8"/>
-<title>معرض صور</title>
-<style>
-    body {
-      font-family: 'Cairo', sans-serif;
-      background-color: #f4f4f4;
-      text-align: justify;
+      margin-top: 10px;
     }
 
+    /* معرض الصور */
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
+      gap: .75rem;
+      margin-top: 1rem;
     }
-
     .gallery img {
-      width: 75px;
-      height: 85px;
+      width: 75px; height: 85px;
       object-fit: cover;
-      cursor: pointer;
-      border: 4px solid goldenrod;
+      border: 3px solid var(--gold);
       border-radius: 10px;
+      cursor: pointer;
     }
 
     .lightbox {
       display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.85);
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.85);
       justify-content: center;
       align-items: center;
       z-index: 1000;
+      padding: 1rem;
     }
-
     .lightbox img {
-      max-width: 100%;
-      max-height: 100%;
-      border: 6px solid gold;
-      border-radius: 12px;
+      max-width: 96vw; max-height: 88vh;
+      border: 6px solid gold; border-radius: 12px;
+      box-sizing: border-box;
     }
-
     .lightbox .close,
     .lightbox .prev,
     .lightbox .next {
       position: absolute;
-      font-size: 2rem;
-      color: white;
-      background: rgba(0,0,0,0.6);
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem 1rem;
+      font-size: 1.8rem;
+      color: #fff;
+      background: rgba(0,0,0,.55);
+      border: none; cursor: pointer;
+      padding: .4rem .8rem;
       border-radius: 8px;
     }
+    .lightbox .close { top: 16px; right: 24px; }
+    .lightbox .prev  { top: 50%; left: 24px; transform: translateY(-50%); }
+    .lightbox .next  { top: 50%; right: 24px; transform: translateY(-50%); }
 
-    .lightbox .close {
-      top: 20px;
-      right: 30px;
+    /* زر الرجوع للأعلى */
+    #backToTop {
+      position: fixed; bottom: 50px; right: 14px; z-index: 999;
+      background-color: gold; color: #083; border: none;
+      padding: 8px 14px; border-radius: 10px;
+      font-size: 22px; font-weight: bold; cursor: pointer; display: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,.2);
+      transition: all .25s ease;
     }
+    #backToTop:hover { background-color: goldenrod; }
 
-    .lightbox .prev {
-      top: 50%;
-      left: 30px;
-      transform: translateY(-50%);
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--brand);
+      color: #fff;
+      margin-top: 2rem;
+      font-size: .95rem;
     }
+    footer a { color: #cfe2ff; text-decoration: underline; }
 
-    .lightbox .next {
-      top: 50%;
-      right: 30px;
-      transform: translateY(-50%);
-    }
-   
- </style>
-</head>
-<script>
-  // إظهار الزر عند التمرير للأسفل
-  window.onscroll = function() {
-    var btn = document.getElementById("backToTop");
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
+    /* فواصل بسيطة */
+    .hr { border: 0; border-top: 1px solid #e5e5e5; margin: 1.25rem 0; }
+  </style>
 
-  // عند الضغط يعود للأعلى
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
-<h1>معرض صور الدكتور زيد</h1>
-<div class="gallery">
-<img alt="صورة 1" src="1.jpg"/>
-<img alt="صورة 2" src="2.jpg"/>
-<img alt="صورة 3" src="3.jpg"/>
-<img alt="صورة 6" src="6.jpg"/>
-<img alt="صورة 4" src="4.jpg"/>
-<img alt="صورة 5" src="5.jpg"/>
-<img alt="صورة 9" src="9.jpg"/>
-<img alt="صورة 12" src="12.jpg"/>
-<img alt="صورة 13" src="13.jpg"/>
-<img alt="صورة 14" src="14.jpg"/>
-<img alt="صورة 15" src="15.jpg"/>
-<img alt="صورة 16" src="16.jpg"/>
-</div>
-<div class="lightbox" id="lightbox">
-<button class="close" onclick="closeLightbox()">×</button>
-<button class="prev" onclick="prevImage()">←</button>
-<img id="lightbox-img" src=""/>
-<button class="next" onclick="nextImage()">→</button>
-</div>
-<script>
-    const images = document.querySelectorAll('.gallery img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    let currentIndex = 0;
+  <script defer>
+    // زر العودة للأعلى
+    window.addEventListener('scroll', () => {
+      const btn = document.getElementById('backToTop');
+      const y = document.documentElement.scrollTop || document.body.scrollTop;
+      btn.style.display = y > 300 ? 'block' : 'none';
+    });
+    function scrollToTop(){ window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
-    images.forEach((img, i) => {
-      img.addEventListener('click', () => {
-        currentIndex = i;
-        showImage();
+    // Lightbox
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('.gallery img');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      let currentIndex = 0;
+
+      function showImage(){
+        lightboxImg.src = images[currentIndex].src;
+        lightbox.style.display = 'flex';
+      }
+      function closeLightbox(){ lightbox.style.display = 'none'; }
+      function nextImage(){ currentIndex = (currentIndex + 1) % images.length; showImage(); }
+      function prevImage(){ currentIndex = (currentIndex - 1 + images.length) % images.length; showImage(); }
+
+      images.forEach((img, i) => {
+        img.addEventListener('click', () => { currentIndex = i; showImage(); });
+      });
+
+      // جعل الأدوات متاحة للزرّين
+      window.closeLightbox = closeLightbox;
+      window.nextImage = nextImage;
+      window.prevImage = prevImage;
+
+      // إغلاق بالضغط خارج الصورة أو زر ESC
+      lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', (e) => {
+        if (lightbox.style.display === 'flex') {
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowRight') nextImage();
+          if (e.key === 'ArrowLeft') prevImage();
+        }
       });
     });
-
-    function showImage() {
-      lightboxImg.src = images[currentIndex].src;
-      lightbox.style.display = 'flex';
-    }
-
-    function closeLightbox() {
-      lightbox.style.display = 'none';
-    }
-
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage();
-    }
-
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage();
-    }
-  
   </script>
-<button id="backToTop" onclick="scrollToTop()" title="العودة للأعلى">
-  ↑
-</button>
-<div style="line-height: 1; font-size: 12px;">
-<hr/>
-<p><strong>المرجع:</strong> <a href="https://journals.ekb.eg/article_304451.html" target="_blank">المجلة العلمية للدراسات التجارية والبيئية</a></p>
-<p><strong>المرجع:</strong> <a href="https://apc.aast.edu/ojs/index.php/MRT/article/view/MRT.2024.03.1.833" target="_blank"> الاكاديمية العربية للعلوم والتكنولوجيا والنقل البحري </a></p>
-<p><strong>المرجع:</strong> <a href="https://www.researchgate.net/publication/372124188_The_impact_of_COVID-19_on_the_bulk_market_in_the_Mediterranean" target="_blank">المجلة العلمية للدراسات التجارية والبيئية</a></p>
-</div>
-<div style="text-align: center; margin: 40px 0;">
-<a href="zaidsongmp4.mp4" style="font-size: 20px; color: #004080; text-decoration: none;" target="_blank">
-    🎵 اغنية إهداء للدكتور زيد 🎵
-  </a>
-</div>
- 
-<div style="line-height: .4;">
-<hr/>
-<span style="color:blue;"> <p style="text-align: center;">  Euro Asian Maritime LTD.Co. </p> </span>
-</div>
-<div style="text-align: center;">
-<span style="color: blue; font-weight: bold;">
-    YOUR TRUSTED PARTNER
-  </span>
-</div>
-<div style="text-align: center;">
-<a href="#" onclick="window.open('https://www.euroasianmaritime.com', 'popup', 'width=1000,height=600'); return false;" style="color: blue;">
-    www.euroasianmaritime.com
-  </a>
-</div>
-</section>
-</div>
+</head>
 
-<footer>
-  © 2025 د. زيد شاكر أبو حمور. جميع الحقوق محفوظة.
-  <br/>
-<a href="terms.html" style="color: #ccc; text-decoration: underline; font-size: 13px;" target="_blank">الشروط والأحكام</a> |
-  <a href="privacy.html" style="color: #ccc; text-decoration: underline; font-size: 13px;" target="_blank">سياسة الخصوصية</a>
-</footer>
+<body>
+
+  <header>
+    <!-- صورة الهيدر بدون lazy (غالبًا LCP) مع أبعاد لتقليل CLS -->
+    <img src="11.jpg" alt="صورة الدكتور زيد شاكر أبو حمور"
+         width="180" height="220"
+         style="border: 5px solid gold; border-radius: 12px; width: 180px; height: auto; max-width: 100%;">
+    <h1 class="main-title">الدكتور زيد شاكر أحمد أبو حمور</h1>
+    <p style="font-size: 14px; font-weight: bold; color: #fff; text-align: center;">رجل أعمال وخبير في الملاحة والنقل البحري</p>
+    <p>يُعد الدكتور زيد شاكر أبو حمور أحد أبرز الخبراء الأردنيين في مجال تكنولوجيا النقل البحري.</p>
+  </header>
+
+  <nav>
+    <a href="#about">نبذة</a>
+    <a href="#vision">الرؤية</a>
+    <a href="#career">المسيرة المهنية</a>
+    <a href="#community">المسؤولية المجتمعية</a>
+    <a href="#research">الأبحاث</a>
+    <a href="#gallery">معرض الصور</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>نبذة تعريفية</h2>
+      <p>
+        رجل أعمال أردني، مواليد موسكو عام 1982، حصل على درجة الدكتوراه في تكنولوجيا النقل البحري من الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري بتقدير امتياز. يتقن العربية والإنجليزية، وملم بالروسية واليونانية والتركية، يشغل منصب المدير التنفيذي لشركة الأورواسيوية للملاحة البحرية، وعضو مجلس إدارة في عدد من الشركات والوكالات البحرية. وهو شخصية طموحة ومثابرة، عُرف بحبه للعمل وإيمانه العميق بقيمة الاجتهاد كطريق لتحقيق النجاح. لا يتردد في خوض التحديات، يعمل دائماً تحت مبدأ "المجازفة من أجل الهدف"، واضعاً نصب عينيه الرؤية الواضحة والنتائج الملموسة. جمع بين الفكر العملي وروح الريادة، مما جعله نموذجاً يُحتذى به في الإصرار والطموح.
+      </p>
+    </section>
+
+    <section id="vision">
+      <h2>رؤية الدكتور زيد شاكر أبو حمور في تطوير النقل البحري</h2>
+      <p>
+        يرى <span style="color:blue;">الدكتور زيد شاكر أبو حمور</span> أن قطاع الملاحة والنقل البحري هو عصب حيوي في الاقتصاد العالمي ومحرك رئيسي للتجارة الدولية. يؤمن بأهمية تطوير هذا القطاع من خلال الابتكار وتوظيف التكنولوجيا الحديثة لتحسين الكفاءة وتقليل التكاليف. كما يولي اهتماماً خاصاً بتأهيل الكفاءات البشرية ورفع مستوى التدريب البحري، معتبراً أن الاستثمار في العنصر البشري لا يقل أهمية عن الاستثمار في البنية التحتية.
+      </p>
+      <p>
+        يرى أيضاً أن الرقمنة والتحول الذكي في إدارة سلاسل الإمداد البحرية هو المستقبل، مشيراً إلى أهمية إدخال أنظمة الملاحة الذكية، وتحليل البيانات، وتقنيات الذكاء الاصطناعي لتعزيز الكفاءة والشفافية في العمليات البحرية. كما يؤكد على ضرورة مواءمة البنية التشريعية والبيئية مع المعايير الدولية لضمان سلامة الملاحة وحماية البيئة البحرية.
+      </p>
+      <p>
+        من خلال عمله وخبرته، يسعى الدكتور زيد إلى بناء بيئة بحرية متقدمة تواكب المتغيرات العالمية، وتضع الأردن والمنطقة في موقع تنافسي في قطاع النقل البحري العالمي.
+      </p>
+    </section>
+
+    <section id="career">
+      <h2>المسيرة المهنية</h2>
+      <p>يشغل حالياً منصب المدير التنفيذي لشركة الأورواسيوية، وعضو مجلس إدارة في شركات ووكالات بحرية. يتميز بشخصيته الطموحة ونهجه القيادي المبني على "المجازفة من أجل الهدف".</p>
+    </section>
+
+    <section id="community">
+      <h2>المسؤولية المجتمعية</h2>
+      <p>ساهم في دعم مؤسسات رياضية وتعليمية وخيرية محلياً، ويحرص على خدمة المجتمع كجزء من رؤيته القيادية المتكاملة. ويتمتع الدكتور زيد بعلاقة قوية ومبنية على الاحترام والوفاء بوالديه وأهله، ويُعرف ببرّه العميق بهم واعتزازه بجذوره العائلية التي تشكل جزءاً أساسياً من شخصيته وقيمه.</p>
+    </section>
+
+    <section id="research">
+      <h2>الأبحاث والإنجازات</h2>
+      <p>له أبحاث منشورة في مجال النقل البحري وتكنولوجيا سلاسل الإمداد، وساهم في تطوير تطبيقات عملية في إدارة الموانئ والتحول الرقمي البحري.</p>
+
+      <!-- المراجع -->
+      <div style="line-height: 1.6; font-size: 14px; text-align: right; margin-top: 24px;">
+        <h3 style="font-size: 16px; color: #333; margin: .5rem 0;">المراجع:</h3>
+        <ul style="margin: 0; padding-right: 18px;">
+          <li><strong>بحث علمي:</strong> <a href="https://journals.ekb.eg/article_304451.html" target="_blank" rel="noopener">المجلة العلمية للدراسات التجارية والبيئية</a></li>
+          <li><strong>بحث علمي:</strong> <a href="https://apc.aast.edu/ojs/index.php/MRT/article/view/MRT.2024.03.1.833" target="_blank" rel="noopener">الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري</a></li>
+          <!-- احذف رابط chrome-extension غير الصالح أو استبدله برابط PDF عام إن توفر -->
+          <li><strong>بحث علمي:</strong> <a href="https://www.researchgate.net/publication/372124188_The_impact_of_COVID-19_on_the_bulk_market_in_the_Mediterranean" target="_blank" rel="noopener">The impact of COVID-19 on the bulk market</a></li>
+          <li><a href="dr.zaid-abu-hammour.pdf" target="_blank" rel="noopener">ملف PDF: The impact of COVID-19 on the bulk market in the Mediterranean</a></li>
+        </ul>
+
+        <h3 style="font-size: 16px; color: #333; margin: 1rem 0 .5rem;">المقالات:</h3>
+        <ul style="margin: 0; padding-right: 18px;">
+          <li>
+            <a href="ships/maritime-digital-leadership" aria-label="الابتكار الرقمي والقيادة الاستراتيجية" style="color: #0026ff; font-size: 16px; text-decoration: none;">
+              دور الابتكار الرقمي والقيادة الاستراتيجية في تطوير قطاع النقل البحري في منطقة البحر المتوسط
+            </a>
+          </li>
+          <li>
+            <a href="dr.pdf" target="_blank" rel="noopener">مقابلة: مجلة رجال الأعمال (عدد 50 – أيلول 2014 – الأردن)</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>معرض الصور</h2>
+      <div class="gallery">
+        <!-- أضفت loading="lazy" وأبعاد لتقليل CLS -->
+        <img src="1.jpg" alt="صورة 1 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="2.jpg" alt="صورة 2 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="3.jpg" alt="صورة 3 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="6.jpg" alt="صورة 6 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="4.jpg" alt="صورة 4 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="5.jpg" alt="صورة 5 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="9.jpg" alt="صورة 9 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="12.jpg" alt="صورة 12 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="13.jpg" alt="صورة 13 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="14.jpg" alt="صورة 14 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="15.jpg" alt="صورة 15 للدكتور زيد" width="75" height="85" loading="lazy">
+        <img src="16.jpg" alt="صورة 16 للدكتور زيد" width="75" height="85" loading="lazy">
+      </div>
+
+      <div class="lightbox" id="lightbox">
+        <button class="close" onclick="closeLightbox()" aria-label="إغلاق">×</button>
+        <button class="prev"  onclick="prevImage()"  aria-label="السابق">←</button>
+        <img id="lightbox-img" src="" alt="عرض مكبر للصورة المختارة">
+        <button class="next"  onclick="nextImage()"  aria-label="التالي">→</button>
+      </div>
+    </section>
+
+    <hr class="hr">
+
+    <div style="text-align:center; margin: 24px 0;">
+      <a href="zaidsongmp4.mp4" target="_blank" rel="noopener" style="font-size: 20px; color: #004080; text-decoration: none;">
+        🎵 أغنية إهداء للدكتور زيد 🎵
+      </a>
+    </div>
+
+    <hr class="hr">
+
+    <p style="text-align: center; color: #1a4; font-weight:700; margin:.25rem 0;">Euro Asian Maritime LTD.Co.</p>
+    <div style="text-align: center; margin-bottom:.5rem;">
+      <span style="color: #003366; font-weight: bold;">YOUR TRUSTED PARTNER</span>
+    </div>
+    <div style="text-align: center;">
+      <a href="#" onclick="window.open('https://www.euroasianmaritime.com','popup','width=1000,height=600'); return false;" style="color: #003366;">
+        www.euroasianmaritime.com
+      </a>
+    </div>
+  </div>
+
+  <button id="backToTop" onclick="scrollToTop()" title="العودة للأعلى">↑</button>
+
+  <footer>
+    © 2025 د. زيد شاكر أبو حمور. جميع الحقوق محفوظة.
+    <br>
+    <a href="terms.html" target="_blank" rel="noopener" style="color: #cfe2ff;">الشروط والأحكام</a> |
+    <a href="privacy.html" target="_blank" rel="noopener" style="color: #cfe2ff;">سياسة الخصوصية</a>
+  </footer>
+</body>
+</html>
