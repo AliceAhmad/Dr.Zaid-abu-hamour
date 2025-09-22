@@ -140,6 +140,110 @@
   <h2 id="why">لماذا تهمّنا نقطة نيمو؟</h2>
   <div class="grid cols-3">
     <div>
+<!-- علاقة نقطة نيمو بحركة السفن التجارية -->
+<section class="card" id="shipping" aria-labelledby="shipping-title">
+  <h2 id="shipping-title">علاقة نقطة نيمو بحركة السفن التجارية</h2>
+
+  <p>
+    تُعدّ منطقة <strong>نقطة نيمو</strong> من أكثر أجزاء المحيط الهادئ عزلةً،
+    لذلك فإن <strong>كثافة المرور البحري التجاري</strong> فيها منخفضة جدًا مقارنةً
+    بممرات الشحن الرئيسية حول العالم. يعود ذلك إلى عوامل تشغيلية وأمنية ولوجستية تجعل
+    شركات الملاحة تُفضّل المسارات الأقرب إلى الموانئ والبنى التحتية.
+  </p>
+
+  <div class="grid cols-3" role="list" aria-label="أسباب انخفاض الحركة التجارية قرب نقطة نيمو">
+    <div role="listitem">
+      <h3>1) بُعد شديد عن الموانئ</h3>
+      <p>
+        لا توجد موانئ خدمة أو نقاط تزوّد قريبة، ما يحدّ من إمكانات
+        <em>التموين، الصيانة الطارئة، والإخلاء الطبي</em> للسفن وطاقمها.
+      </p>
+    </div>
+    <div role="listitem">
+      <h3>2) إدارة المخاطر والتأمين</h3>
+      <p>
+        خطط إدارة المخاطر تُفضّل بقاء السفن ضمن <strong>مدى إغاثة معقول</strong>
+        من الموانئ وخطوط البحث والإنقاذ (SAR)، لتقليل كلفة الأخطار وقيمة الأقساط.
+      </p>
+    </div>
+    <div role="listitem">
+      <h3>3) كفاءة الوقود والوقت</h3>
+      <p>
+        المسارات التجارية تعتمد على <strong>أقصر المسافات العملية</strong> (Great Circle)
+        مع مراعاة <em>التيارات والرياح</em>، وغالبًا لا تتطلب المرور قرب منطقة نيمو.
+      </p>
+    </div>
+  </div>
+
+  <div class="note" role="note" style="margin-top:12px">
+    تَدل خرائط كثافة إشارات التتبّع (<abbr title="Automatic Identification System">AIS</abbr>)
+    على <strong>ندرة مسارات سفن الحاويات وناقلات البضائع</strong> قرب نقطة نيمو، مقارنةً
+    بالممرات المزدحمة على حواف الهادئ (شمالًا وجنوبًا) وحول السواحل.
+  </div>
+
+  <section aria-labelledby="ops-considerations" style="margin-top:16px">
+    <h3 id="ops-considerations">اعتبارات تشغيلية</h3>
+    <ul style="margin:0; padding-inline-start:20px; line-height:1.9">
+      <li><strong>السلامة:</strong> البقاء ضمن نطاق <abbr title="Search and Rescue">SAR</abbr> أقوى وإشعارات الملاحة (NAVAREA) الأكثر نشاطًا.</li>
+      <li><strong>الاتصالات:</strong> الاعتماد أساسًا على الأقمار الصناعية في وسط المحيط؛ التغطية متاحة لكن العزل يرفع المخاطر عند الطوارئ.</li>
+      <li><strong>الأرصاد:</strong> تجنّب المناطق ذات <em>الدوامات والتيارات القوية</em> جنوب الهادئ عند عدم الحاجة التشغيلية.</li>
+      <li><strong>التكلفة:</strong> المسارات الأقرب للموانئ تقلّل أيام البحر، وتحسّن <em>استهلاك الوقود</em> وسلاسل الإمداد.</li>
+    </ul>
+  </section>
+
+  <div class="table-wrap" role="region" aria-label="مقارنة مسارات">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">نوع المسار</th>
+          <th scope="col">الخصائص</th>
+          <th scope="col">موقعه من نيمو</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">حواف الهادئ (شمالي/جنوبي)</th>
+          <td>قرب سلاسل موانئ، كثافة مرور عالية، خدمات SAR واتصالات أقوى</td>
+          <td>بعيد جدًا عن نيمو</td>
+        </tr>
+        <tr>
+          <th scope="row">دوائر عظمى بين قارات الهادئ</th>
+          <td>تحسين زمن الرحلة والوقود، يراعي الطقس والتيارات</td>
+          <td>نادرًا ما يقترب من نيمو</td>
+        </tr>
+        <tr>
+          <th scope="row">وسط الهادئ الجنوبي العميق</th>
+          <td>بنية تحتية شبه معدومة، خطط طوارئ معقّدة</td>
+          <td>قد يمر قريبًا نظريًا لكن الاستخدام التجاري محدود جدًا</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure style="margin-top:16px">
+    <img
+      src="https://www.shakerabuhamour.com/subject/point-nemo/ais-heatmap.webp"
+      srcset="
+        https://www.shakerabuhamour.com/subject/point-nemo/ais-heatmap-800.webp 800w,
+        https://www.shakerabuhamour.com/subject/point-nemo/ais-heatmap-1400.webp 1400w"
+      sizes="(max-width: 900px) 100vw, 900px"
+      alt="تصور حراري (تمثيلي) لكثافة إشارات AIS في المحيط الهادئ يُظهر قلة المرور قرب نقطة نيمو"
+      width="1400" height="850" loading="lazy" decoding="async" />
+    <figcaption>تصور تمثيلي: كثافة مرور أقل في قلب الهادئ الجنوبي مقارنة بالحواف الساحلية.</figcaption>
+  </figure>
+
+  <details style="margin-top:12px">
+    <summary>خلاصة مختصرة</summary>
+    <p style="margin-top:8px">
+      بالنسبة لخطوط الملاحة التجارية، تُعدّ منطقة نقطة نيمو <strong>خارج نطاق الأولويات التشغيلية</strong>،
+      لذا تبقى <em>رمزية علمية</em> أكثر من كونها ممرًا لوجستيًا عمليًا للسفن.
+    </p>
+  </details>
+</section>
+
+
+
+      
       <h3>1) بيئة قليلة الإنتاجية</h3>
       <p>البعد عن مصادر المغذّيات والتيارات يجعل المنطقة فقيرة نسبيًا بالأحياء الدقيقة والأسماك مقارنة بحواف التيارات الصاعدة.</p>
     </div>
